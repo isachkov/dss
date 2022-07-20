@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 
 project(dss_test)
 
-set(DSS_TEST_SRC sample_case.cpp main.cpp)
+set(DSS_TEST_SRC 
+    sample_case.cpp 
+    main.cpp
+    storage_tests.cpp)
 
 add_executable(dss_test ${DSS_TEST_SRC})
 
