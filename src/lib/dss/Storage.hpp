@@ -10,6 +10,8 @@
 namespace dss {
 template <typename TStored> class Storage final {
 public:
+  using stored_t = TStored;
+
   template <typename TPredicate>
   auto select(TPredicate predicate) const -> std::vector<TStored> {
     std::vector<TStored> result;
